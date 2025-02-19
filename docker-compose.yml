@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  streamlit_app:
+    build: .
+    container_name: iss-tracker
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src:/app/src
+      
+    
